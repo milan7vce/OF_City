@@ -1,0 +1,37 @@
+ADD THIS FUNCTION OBJECT INSIDE YOUR system/controlDict FILE WITHIN functions{}
+
+---->>>>        this function object is useful to calculate the volume of each cell.
+
+    cellsVolume
+    {
+        libs ("libutilityFunctionObjects.so"); //functionObjectLibs ( "libutilityFunctionObjects.so" ); //controllare a seconda della versione di OF
+        type            coded;
+        name            cellsVolume;
+        enabled         on;
+        executeControl  timeStep;
+        executeInterval 1;
+        writeControl    outputTime;
+        writeInterval   1;
+
+        codeExecute
+        #{
+
+                volScalarField cellsVolume
+                (
+                        IOobject
+                        (
+                            "cellsVolume",
+                            mesh().time().timeName(),
+                            mesh(),
+                            IOobject::NO_READ,
+                            IOobject::AUTO_WRITE
+                        ),
+                        mesh(),
+                        dimensionedScalar("zero",dimVolume,0.0)
+                );
+
+                cellsVolume.ref() = mesh().V();
+                cellsVolume.write();
+        #};
+    }
+
