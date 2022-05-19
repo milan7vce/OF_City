@@ -41,7 +41,7 @@ volScalarField p1
     mesh
 );
 
-surfaceScalarField p_limit
+/*surfaceScalarField p_limit
 (
     IOobject
     (
@@ -68,7 +68,7 @@ volScalarField pCollapse
     ),
     p*0
 );
-
+*/
 
 volScalarField T
 (
@@ -116,7 +116,7 @@ dimensionedScalar("c1", dimLength/dimTime , 0.),
 "zeroGradient"
 );
 
-surfaceScalarField c_limit
+/*surfaceScalarField c_limit
 (
     IOobject
     (
@@ -128,7 +128,7 @@ surfaceScalarField c_limit
     ),
     mesh,
 dimensionedScalar("c_limit", dimLength/dimTime , 400.)
-);
+);*/
 
 
 volScalarField alphav
@@ -159,7 +159,7 @@ volScalarField CFL
 );
 
 
-volScalarField alphav_limit
+/*volScalarField alphav_limit
 (
     IOobject
     (
@@ -171,7 +171,7 @@ volScalarField alphav_limit
     ),
        mesh
 
-);
+);*/
 
 //#include "rhoBoundaryTypes.H"
 volScalarField rho
@@ -294,7 +294,7 @@ volScalarField Y
     mesh
 );
 
-volScalarField divide
+/*volScalarField divide
 (
     IOobject
     (
@@ -306,7 +306,7 @@ volScalarField divide
     ),
 
     mesh
-);
+);*/
 
 /*surfaceScalarField x_limit
 (
@@ -339,7 +339,7 @@ surfaceScalarField x_limit
 );
 
 
-surfaceScalarField Y_limit
+/**surfaceScalarField Y_limit
 (
     IOobject
     (
@@ -354,7 +354,7 @@ surfaceScalarField Y_limit
     dimensionedScalar(dimless, 0.9999)
 
 );
-/*
+
 volScalarField rr
 (
     IOobject
