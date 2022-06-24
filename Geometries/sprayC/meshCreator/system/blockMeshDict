@@ -1,0 +1,51 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      blockMeshDict;
+}
+
+// Exported by SnappyHexMesh GUI add-on for Blender v1.0
+// Source file: C:\Users\Usuario\Desktop\finalmesh\FINALMESH2\BIEN.blend
+// Export date: 2022-06-07 17:11:43.347646
+
+convertToMeters 1;
+
+vertices
+(
+    ( -5.2 -7.6 -7.6 )
+    ( 11.2 -7.6 -7.6 )
+    ( 11.2 7.6 -7.6 )
+    ( -5.2 7.6 -7.6 )
+    ( -5.2 -7.6 7.6 )
+    ( 11.2 -7.6 7.6 ) 
+    ( 11.2 7.6 7.6 ) 
+    ( -5.2 7.6 7.6 ) 
+);
+
+blocks
+(
+    hex (0 1 2 3 4 5 6 7) (40 80 80) simpleGrading (1 1 1) //40 80 80
+);
+
+edges
+(
+);
+
+boundary
+(
+    world
+    {
+        type patch;
+        faces
+        (
+            (3 7 6 2)
+            (0 4 7 3)
+            (2 6 5 1)
+            (1 5 4 0)
+            (0 3 2 1)
+            (4 5 6 7)
+        );
+    }
+);

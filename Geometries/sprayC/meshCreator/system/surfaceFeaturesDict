@@ -1,0 +1,27 @@
+FoamFile
+{
+    version         2;
+    format          ascii;
+    class           dictionary;
+    object          surfaceFeaturesDict;
+}
+
+// Exported by SnappyHexMesh GUI add-on for Blender v1.0
+// Source file: C:\Users\Usuario\Desktop\finalmesh\FINALMESH3\BIEN.blend
+// Export date: 2022-06-10 16:00:41.633282
+
+
+
+surfaces
+(
+    "chamber.stl"
+    "inlet.stl"
+    "needle.stl"
+    "nozzle1.stl"
+    "nozzlle2.stl"
+    "outlet.stl"
+);
+
+includedAngle   150;
+
+
