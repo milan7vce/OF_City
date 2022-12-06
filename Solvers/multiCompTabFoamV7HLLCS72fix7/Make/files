@@ -1,3 +1,0 @@
-multiCompTabFoamV7HLLCS72fix7.C
-
-EXE = $(FOAM_APPBIN)/multiCompTabFoamV7HLLCS72fix7

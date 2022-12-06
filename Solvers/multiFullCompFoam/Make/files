@@ -1,3 +1,0 @@
-multiFullCompFoam.C
-
-EXE = $(FOAM_APPBIN)/multiFullCompFoam
