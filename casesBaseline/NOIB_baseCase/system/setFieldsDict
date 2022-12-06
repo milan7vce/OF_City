@@ -1,0 +1,89 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.0                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      setFieldsDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+defaultFieldValues (
+		volVectorFieldValue U ( 0 0 0 ) 
+		volScalarFieldValue e 490581.15625
+		volScalarFieldValue rho 21.9638538360595703
+		volScalarFieldValue p 6015631
+		volScalarFieldValue T 903.00091552734375
+		volScalarFieldValue Y 0 
+);
+
+regions         
+( 
+		
+boxToCell 
+{
+	box ( -0.001 -0.000125 -0.000125 )(-0.00002  0.000125 0.000125) ;
+	
+	fieldValues 
+	(
+	volScalarFieldValue e -1865312.8308645305
+	volVectorFieldValue U (0 0 0) 
+	volScalarFieldValue rho 698.03210449218750
+	volScalarFieldValue T 363.00000000000000
+	volScalarFieldValue p 6022407.5518610114
+	volScalarFieldValue Y 1			
+	);
+} 
+
+boxToCell 
+{
+	box ( -0.0022 -0.0006 -0.0006 )(-0.001 0.0006 0.0006) ;
+	fieldValues 
+	(
+		volVectorFieldValue U ( 0 0 0 ) 
+		volScalarFieldValue e -1900134.0225281843
+		volScalarFieldValue rho 804.81585693359375
+		volScalarFieldValue p 150000000
+		volScalarFieldValue T 363
+		volScalarFieldValue Y 1 
+	);
+} 
+		
+boxToCell 
+{
+	box (-0.003 -0.0012 -0.0012 )( -0.0022 0.0012 0.0012) ;
+	fieldValues 
+	(
+		volVectorFieldValue U ( 0 0 0 ) 
+		volScalarFieldValue e -1900134.0225281843
+		volScalarFieldValue rho 804.81585693359375
+		volScalarFieldValue p 150000000
+		volScalarFieldValue T 363
+		volScalarFieldValue Y 1 
+	);
+} 
+
+boxToCell 
+{
+	box (-0.006 -0.002 -0.002 )( -0.003 0.002 0.002) ;
+	fieldValues 
+	(
+		volVectorFieldValue U ( 0 0 0 ) 
+		volScalarFieldValue e -1900134.0225281843
+		volScalarFieldValue rho 804.81585693359375
+		volScalarFieldValue p 150000000
+		volScalarFieldValue T 363
+		volScalarFieldValue Y 1 
+	);
+} 
+
+);
+
+// ************************************************************************* //

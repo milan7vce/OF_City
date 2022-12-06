@@ -1,0 +1,104 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  3.0.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      topoSetDict.1;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+actions
+(
+    {
+        name    toBeRef;
+        type    cellZoneSet;
+        action  new;
+        source  boxToCell;
+        sourceInfo
+        {
+		box (0.0052 0.0023 -0.00045) (0.0054 0.0032 0.00045);  //sym
+		//box (-16e-3 -16e-3 0) (7.5e-3 7.5e-3 7.8125E-05);  //pZone
+        }
+    }
+
+    
+    /*{
+        name    box;
+        type    cellZoneSet;
+        action  new;
+        source  boxToCell;
+        sourceInfo
+        {
+            box (-17.5e-3 -17.5e-3 0) (17.5e-3 17.5e-3 35e-3);      
+        }
+    }
+
+
+    {
+        // Name of set to operate on
+        name    extractedFaces;  // to create the faceZone required by the effectiveness module in fvOptions
+        type    faceSet;
+        // One of clear/new/invert/add/delete|subset/list
+        action  new;
+        source  boxToFace;
+        sourceInfo
+        {  
+            // thin box to extract the faceZone where you want to investigate the massflow
+            box (-7.5e-3 -7.5e-3 -3.8e-5) (7.5e-3 7.5e-3 3.8125E-05);  
+        }
+    }
+   
+   
+    // creation of the faceZone (from the above faceSet)
+    {
+        name    wallZone;
+        type    faceZoneSet;
+        action  new;
+        source  setAndNormalToFaceZone;
+        sourceInfo
+        {
+            faceSet extractedFaces;
+            normal (0    0    1);
+        }
+    }
+
+    {
+        // Name of set to operate on
+        name    extractedFaces2;  // to create the faceZone required by the effectiveness module in fvOptions
+        type    faceSet;
+        // One of clear/new/invert/add/delete|subset/list
+        action  new;
+        source  boxToFace;
+        sourceInfo
+        {
+            // thin box to extract the faceZone where you want to investigate the massflow
+            box (-17.5e-3 -17.5e-3 -3.8e-5) (17.5e-3 17.5e-3 3.8125E-05);
+        }
+    }
+
+
+    // creation of the faceZone (from the above faceSet)
+    {
+        name    wallZoneBig;
+        type    faceZoneSet;
+        action  new;
+        source  setAndNormalToFaceZone;
+        sourceInfo
+        {
+            faceSet extractedFaces2;
+            normal (0    0    1);
+        }
+    }*/
+
+
+);
+
+// ************************************************************************* //

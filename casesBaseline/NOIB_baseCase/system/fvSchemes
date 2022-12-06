@@ -1,0 +1,84 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.0                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      fvSchemes;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+ddtSchemes
+{
+    default         localEuler;
+}
+
+gradSchemes
+{
+    default         Gauss linear;
+}
+
+divSchemes
+{
+    default         none;
+    div(tauMC)      Gauss linear;
+}
+
+laplacianSchemes
+{
+    default         Gauss linear uncorrected;
+}
+
+interpolationSchemes
+{
+
+    default           upwind;
+
+    flux(rhoU)		linear;    
+    interpolate(rho)    upwind phi;
+    interpolate(rhoU)   upwind phi;
+    interpolate(rhoY)   upwind phi;
+    interpolate(Y)      upwind phi;
+    interpolate(U)      upwind phi;
+    interpolate(mag(c)) upwind phi;
+    dotInterpolate(Sf,tauMC) upwind phi;
+    dotInterpolate(S,tauMC) upwind phi;
+    interpolate(muEff) upwind phi;
+    
+
+    reconstruct(rho)   upwind;
+    reconstruct(rho1)  vanAlbada;
+
+    reconstruct(rhoU)  upwind;
+    reconstruct(rhoU1) vanAlbadaV;
+
+    reconstruct(p)     upwind;
+    reconstruct(p1)    vanAlbada;
+
+    reconstruct(c1)   upwind;
+    reconstruct(c)    vanAlbada;
+
+    reconstruct(rhoY)  upwind;
+    reconstruct(rhoY1) vanAlbada;
+
+    reconstruct(Y)     upwind;
+    reconstruct(Y1)    vanAlbada;
+
+    reconstruct(rhoE)  upwind;
+    reconstruct(rhoE1) vanAlbada;
+}
+
+snGradSchemes
+{
+    default         corrected;
+}
+
+
+// ************************************************************************* //

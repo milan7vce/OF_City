@@ -1,0 +1,8 @@
+cp -rf rho rho1
+cp -rf e e1
+cp -rf p p1
+cp -rf U U1
+cp -rf Y Y1
+cp -rf alpha.vapour alphav
+
+cp -rf * ../

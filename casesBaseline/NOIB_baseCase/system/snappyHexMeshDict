@@ -1,0 +1,1109 @@
+FoamFile
+{
+    version         2;
+    format          ascii;
+    class           dictionary;
+    object          snappyHexMeshDict;
+}
+
+// Exported by SnappyHexMesh GUI add-on for Blender v1.0
+// Source file: C:\Users\Usuario\Desktop\finalmesh\FINALMESH2\BIEN.blend
+// Export date: 2022-06-07 17:11:43.347646
+
+castellatedMesh true;
+snap            true;
+addLayers       false;
+
+geometry
+{
+    cylinder
+    {
+        type triSurfaceMesh;
+        file "cylinder.stl";
+        // Min Bounds = [-4.15000e+00 -7.50607e+00 -7.50480e+00]
+        // Max Bounds = [ 1.11668e+01  7.50781e+00  7.50375e+00]
+        // Area = 9.36298e+02
+    }
+    wallcylinder
+    {
+        type triSurfaceMesh;
+        file "wallcylinder.stl";
+        // Min Bounds = [-4.15000e+00 -7.50607e+00 -7.50480e+00]
+        // Max Bounds = [ 1.11668e+01  7.50781e+00  7.50375e+00]
+        // Area = 9.36298e+02
+    }
+
+    inlet
+    {
+        type triSurfaceMesh;
+        file "inlet.stl";
+        // Min Bounds = [-5.15000e+00 -1.68654e+00 -1.69264e+00]
+        // Max Bounds = [-5.15000e+00  1.70376e+00  1.69398e+00]
+        // Area = 2.94011e+00
+    }
+    needle
+    {
+        type triSurfaceMesh;
+        file "needle.stl";
+        // Min Bounds = [-5.15000e+00 -1.38112e+00 -1.39180e+00]
+        // Max Bounds = [-2.19121e+00  1.39175e+00  1.39279e+00]
+        // Area = 2.00017e+01
+    }
+    nozzle1
+    {
+        type triSurfaceMesh;
+        file "nozzle1.stl";
+        // Min Bounds = [-5.15000e+00 -1.68654e+00 -1.69288e+00]
+        // Max Bounds = [-1.35221e+00  1.70376e+00  1.69402e+00]
+        // Area = 3.06216e+01
+    }
+    nozzlle2
+    {
+        type triSurfaceMesh;
+        file "nozzlle2.stl";
+        // Min Bounds = [-1.36476e+00 -4.97606e-01 -4.98337e-01]
+        // Max Bounds = [-4.64979e-03  4.97606e-01  4.98337e-01]
+        // Area = 2.79170e+00
+    }
+    outlet
+    {
+        type triSurfaceMesh;
+        file "outlet.stl";
+        // Min Bounds = [ 1.11668e+01 -7.49215e+00 -7.50480e+00]
+        // Max Bounds = [ 1.11668e+01  7.50781e+00  7.49518e+00]
+        // Area = 1.76686e+02
+    }
+
+refinementBox0
+{
+ type searchableBox;
+       min     ( -6.00000000e-3  -2.00000000e-3  -2.00000000e-3);
+       max     ( -3.00000000e-3   2.00000000e-3   2.00000000e-3);
+}
+
+refinementBox1
+{
+ type searchableBox;
+       min     ( -3.00000000e-3  -1.20000000e-3  -1.20000000e-3);
+       max     ( -2.20000000e-3   1.20000000e-3   1.20000000e-3);
+}
+
+refinementBox2
+{
+ type searchableBox;
+       min     ( -2.20000000e-3  -0.60000000e-3  -0.60000000e-3);
+       max     ( -1.00000000e-3   0.60000000e-3   0.60000000e-3);
+}
+
+refinementBox3
+{
+ type searchableBox;
+       min     ( -1.00000000e-3  -0.12500000e-3  -0.12500000e-3);
+       max     (  0.00000000e-3   0.12500000e-3   0.12500000e-3);
+}
+ 
+refinementBox41
+{
+ type searchableBox; 
+       min     (  0.00000000  -0.00024233  -0.00024233);
+       max     (  0.00104000   0.00024233   0.00024233);
+}
+ 
+refinementBox42
+{
+ type searchableBox; 
+       min     (  0.00104000  -0.00027666  -0.00027666);
+       max     (  0.00208000   0.00027666   0.00027666);
+}
+ 
+refinementBox43
+{
+ type searchableBox; 
+       min     (  0.00208000  -0.00031100  -0.00031100);
+       max     (  0.00312000   0.00031100   0.00031100);
+}
+ 
+refinementBox44
+{
+ type searchableBox; 
+       min     (  0.00312000  -0.00034533  -0.00034533);
+       max     (  0.00416000   0.00034533   0.00034533);
+}
+ 
+refinementBox45
+{
+ type searchableBox; 
+       min     (  0.00416000  -0.00037966  -0.00037966);
+       max     (  0.00520000   0.00037966   0.00037966);
+}
+ 
+refinementBox46
+{
+ type searchableBox; 
+       min     (  0.00520000  -0.00041399  -0.00041399);
+       max     (  0.00624000   0.00041399   0.00041399);
+}
+ 
+refinementBox47
+{
+ type searchableBox; 
+       min     (  0.00624000  -0.00044833  -0.00044833);
+       max     (  0.00728000   0.00044833   0.00044833);
+}
+ 
+refinementBox48
+{
+ type searchableBox; 
+       min     (  0.00728000  -0.00048266  -0.00048266);
+       max     (  0.00832000   0.00048266   0.00048266);
+}
+ 
+refinementBox49
+{
+ type searchableBox; 
+       min     (  0.00832000  -0.00051699  -0.00051699);
+       max     (  0.00936000   0.00051699   0.00051699);
+}
+ 
+refinementBox410
+{
+ type searchableBox; 
+       min     (  0.00936000  -0.00055132  -0.00055132);
+       max     (  0.01040000   0.00055132   0.00055132);
+}
+ 
+refinementBox31
+{
+ type searchableBox; 
+     min     (  0.00000000  -0.00033340  -0.00033340);
+     max     (  0.00104000   0.00033340   0.00033340);
+}
+ 
+refinementBox32
+{
+ type searchableBox; 
+     min     (  0.00104000  -0.00045881  -0.00045881);
+     max     (  0.00208000   0.00045881   0.00045881);
+}
+ 
+refinementBox33
+{
+ type searchableBox; 
+     min     (  0.00208000  -0.00058421  -0.00058421);
+     max     (  0.00312000   0.00058421   0.00058421);
+}
+ 
+refinementBox34
+{
+ type searchableBox; 
+     min     (  0.00312000  -0.00070961  -0.00070961);
+     max     (  0.00416000   0.00070961   0.00070961);
+}
+ 
+refinementBox35
+{
+ type searchableBox; 
+     min     (  0.00416000  -0.00083501  -0.00083501);
+     max     (  0.00520000   0.00083501   0.00083501);
+}
+ 
+refinementBox36
+{
+ type searchableBox; 
+     min     (  0.00520000  -0.00096042  -0.00096042);
+     max     (  0.00624000   0.00096042   0.00096042);
+}
+ 
+refinementBox37
+{
+ type searchableBox; 
+     min     (  0.00624000  -0.00108582  -0.00108582);
+     max     (  0.00728000   0.00108582   0.00108582);
+}
+ 
+refinementBox38
+{
+ type searchableBox; 
+     min     (  0.00728000  -0.00121122  -0.00121122);
+     max     (  0.00832000   0.00121122   0.00121122);
+}
+ 
+refinementBox39
+{
+ type searchableBox; 
+     min     (  0.00832000  -0.00133662  -0.00133662);
+     max     (  0.00936000   0.00133662   0.00133662);
+}
+ 
+refinementBox310
+{
+ type searchableBox; 
+     min     (  0.00936000  -0.00146203  -0.00146203);
+     max     (  0.01040000   0.00146203   0.00146203);
+}
+ 
+refinementBox311
+{
+ type searchableBox; 
+     min     (  0.01040000  -0.00158743  -0.00158743);
+     max     (  0.01144000   0.00158743   0.00158743);
+}
+ 
+refinementBox312
+{
+ type searchableBox; 
+     min     (  0.01144000  -0.00171283  -0.00171283);
+     max     (  0.01248000   0.00171283   0.00171283);
+}
+ 
+refinementBox313
+{
+ type searchableBox; 
+     min     (  0.01248000  -0.00183823  -0.00183823);
+     max     (  0.01352000   0.00183823   0.00183823);
+}
+ 
+refinementBox314
+{
+ type searchableBox; 
+     min     (  0.01352000  -0.00196364  -0.00196364);
+     max     (  0.01456000   0.00196364   0.00196364);
+}
+ 
+refinementBox315
+{
+ type searchableBox; 
+     min     (  0.01456000  -0.00208904  -0.00208904);
+     max     (  0.01560000   0.00208904   0.00208904);
+}
+ 
+refinementBox316
+{
+ type searchableBox; 
+     min     (  0.01560000  -0.00221444  -0.00221444);
+     max     (  0.01664000   0.00221444   0.00221444);
+}
+ 
+refinementBox317
+{
+ type searchableBox; 
+     min     (  0.01664000  -0.00233984  -0.00233984);
+     max     (  0.01768000   0.00233984   0.00233984);
+}
+ 
+refinementBox318
+{
+ type searchableBox; 
+     min     (  0.01768000  -0.00246525  -0.00246525);
+     max     (  0.01872000   0.00246525   0.00246525);
+}
+ 
+refinementBox319
+{
+ type searchableBox; 
+     min     (  0.01872000  -0.00259065  -0.00259065);
+     max     (  0.01976000   0.00259065   0.00259065);
+}
+ 
+refinementBox21
+{
+ type searchableBox; 
+     min     (  0.00000000  -0.00225317  -0.00225317);
+     max     (  0.00104000   0.00225317   0.00225317);
+}
+ 
+refinementBox22
+{
+ type searchableBox; 
+     min     (  0.00104000  -0.00242635  -0.00242635);
+     max     (  0.00208000   0.00242635   0.00242635);
+}
+ 
+refinementBox23
+{
+ type searchableBox; 
+     min     (  0.00208000  -0.00259952  -0.00259952);
+     max     (  0.00312000   0.00259952   0.00259952);
+}
+ 
+refinementBox24
+{
+ type searchableBox; 
+     min     (  0.00312000  -0.00277270  -0.00277270);
+     max     (  0.00416000   0.00277270   0.00277270);
+}
+ 
+refinementBox25
+{
+ type searchableBox; 
+     min     (  0.00416000  -0.00294587  -0.00294587);
+     max     (  0.00520000   0.00294587   0.00294587);
+}
+ 
+refinementBox26
+{
+ type searchableBox; 
+     min     (  0.00520000  -0.00311905  -0.00311905);
+     max     (  0.00624000   0.00311905   0.00311905);
+}
+ 
+refinementBox27
+{
+ type searchableBox; 
+     min     (  0.00624000  -0.00329222  -0.00329222);
+     max     (  0.00728000   0.00329222   0.00329222);
+}
+ 
+refinementBox28
+{
+ type searchableBox; 
+     min     (  0.00728000  -0.00346540  -0.00346540);
+     max     (  0.00832000   0.00346540   0.00346540);
+}
+ 
+refinementBox29
+{
+ type searchableBox; 
+     min     (  0.00832000  -0.00363857  -0.00363857);
+     max     (  0.00936000   0.00363857   0.00363857);
+}
+ 
+refinementBox210
+{
+ type searchableBox; 
+     min     (  0.00936000  -0.00381174  -0.00381174);
+     max     (  0.01040000   0.00381174   0.00381174);
+}
+ 
+refinementBox211
+{
+ type searchableBox; 
+     min     (  0.01040000  -0.00398492  -0.00398492);
+     max     (  0.01144000   0.00398492   0.00398492);
+}
+ 
+refinementBox212
+{
+ type searchableBox; 
+     min     (  0.01144000  -0.00415809  -0.00415809);
+     max     (  0.01248000   0.00415809   0.00415809);
+}
+ 
+refinementBox213
+{
+ type searchableBox; 
+     min     (  0.01248000  -0.00433127  -0.00433127);
+     max     (  0.01352000   0.00433127   0.00433127);
+}
+ 
+refinementBox214
+{
+ type searchableBox; 
+     min     (  0.01352000  -0.00450444  -0.00450444);
+     max     (  0.01456000   0.00450444   0.00450444);
+}
+ 
+refinementBox215
+{
+ type searchableBox; 
+     min     (  0.01456000  -0.00467762  -0.00467762);
+     max     (  0.01560000   0.00467762   0.00467762);
+}
+ 
+refinementBox216
+{
+ type searchableBox; 
+     min     (  0.01560000  -0.00485079  -0.00485079);
+     max     (  0.01664000   0.00485079   0.00485079);
+}
+ 
+refinementBox217
+{
+ type searchableBox; 
+     min     (  0.01664000  -0.00502397  -0.00502397);
+     max     (  0.01768000   0.00502397   0.00502397);
+}
+ 
+refinementBox218
+{
+ type searchableBox; 
+     min     (  0.01768000  -0.00519714  -0.00519714);
+     max     (  0.01872000   0.00519714   0.00519714);
+}
+ 
+refinementBox219
+{
+ type searchableBox; 
+     min     (  0.01872000  -0.00537031  -0.00537031);
+     max     (  0.01976000   0.00537031   0.00537031);
+}
+ 
+refinementBox11
+{
+ type searchableBox; 
+     min     (  0.00000000  -0.00433317  -0.00433317);
+     max     (  0.00104000   0.00433317   0.00433317);
+}
+ 
+refinementBox12
+{
+ type searchableBox; 
+     min     (  0.00104000  -0.00450635  -0.00450635);
+     max     (  0.00208000   0.00450635   0.00450635);
+}
+ 
+refinementBox13
+{
+ type searchableBox; 
+     min     (  0.00208000  -0.00467952  -0.00467952);
+     max     (  0.00312000   0.00467952   0.00467952);
+}
+ 
+refinementBox14
+{
+ type searchableBox; 
+     min     (  0.00312000  -0.00485270  -0.00485270);
+     max     (  0.00416000   0.00485270   0.00485270);
+}
+ 
+refinementBox15
+{
+ type searchableBox; 
+     min     (  0.00416000  -0.00502587  -0.00502587);
+     max     (  0.00520000   0.00502587   0.00502587);
+}
+ 
+refinementBox16
+{
+ type searchableBox; 
+     min     (  0.00520000  -0.00519905  -0.00519905);
+     max     (  0.00624000   0.00519905   0.00519905);
+}
+ 
+refinementBox17
+{
+ type searchableBox; 
+     min     (  0.00624000  -0.00537222  -0.00537222);
+     max     (  0.00728000   0.00537222   0.00537222);
+}
+ 
+refinementBox18
+{
+ type searchableBox; 
+     min     (  0.00728000  -0.00554540  -0.00554540);
+     max     (  0.00832000   0.00554540   0.00554540);
+}
+ 
+refinementBox19
+{
+ type searchableBox; 
+     min     (  0.00832000  -0.00571857  -0.00571857);
+     max     (  0.00936000   0.00571857   0.00571857);
+}
+ 
+refinementBox110
+{
+ type searchableBox; 
+     min     (  0.00936000  -0.00589174  -0.00589174);
+     max     (  0.01040000   0.00589174   0.00589174);
+}
+ 
+refinementBox111
+{
+ type searchableBox; 
+     min     (  0.01040000  -0.00606492  -0.00606492);
+     max     (  0.01144000   0.00606492   0.00606492);
+}
+ 
+refinementBox112
+{
+ type searchableBox; 
+     min     (  0.01144000  -0.00623809  -0.00623809);
+     max     (  0.01248000   0.00623809   0.00623809);
+}
+ 
+refinementBox113
+{
+ type searchableBox; 
+     min     (  0.01248000  -0.00641127  -0.00641127);
+     max     (  0.01352000   0.00641127   0.00641127);
+}
+ 
+refinementBox114
+{
+ type searchableBox; 
+     min     (  0.01352000  -0.00658444  -0.00658444);
+     max     (  0.01456000   0.00658444   0.00658444);
+}
+ 
+refinementBox115
+{
+ type searchableBox; 
+     min     (  0.01456000  -0.00675762  -0.00675762);
+     max     (  0.01560000   0.00675762   0.00675762);
+}
+ 
+refinementBox116
+{
+ type searchableBox; 
+     min     (  0.01560000  -0.00693079  -0.00693079);
+     max     (  0.01664000   0.00693079   0.00693079);
+}
+ 
+refinementBox117
+{
+ type searchableBox; 
+     min     (  0.01664000  -0.00710397  -0.00710397);
+     max     (  0.01768000   0.00710397   0.00710397);
+}
+ 
+refinementBox118
+{
+ type searchableBox; 
+     min     (  0.01768000  -0.00727714  -0.00727714);
+     max     (  0.01872000   0.00727714   0.00727714);
+}
+ 
+refinementBox119
+{
+ type searchableBox; 
+     min     (  0.01872000  -0.00745031  -0.00745031);
+     max     (  0.01976000   0.00745031   0.00745031);
+}
+  
+
+}
+
+castellatedMeshControls
+{
+    maxLocalCells   400000000;
+    maxGlobalCells  400000000;
+    minRefinementCells 10;
+    maxLoadUnbalance 0.1;
+    nCellsBetweenLevels 7;
+    locationInMesh (0 0 0);
+    allowFreeStandingZoneFaces true;
+    resolveFeatureAngle 180;
+    features
+    (
+        {
+            file "cylinder.eMesh";
+            level 0;
+        }
+        {
+            file "wallcylinder.eMesh";
+            level 0;
+        }
+
+        {
+            file "inlet.eMesh";
+            level 0;
+        }
+        {
+            file "needle.eMesh";
+            level 0;
+        }
+        {
+            file "nozzle1.eMesh";
+            level 0;
+        }
+        {
+            file "nozzlle2.eMesh";
+           level 6;
+        }
+        {
+            file "outlet.eMesh";
+            level 0;
+        }
+
+    );
+    refinementSurfaces
+    {
+        cylinder
+        {
+            level (0 0);
+            patchInfo { type patch; }
+        }
+	wallcylinder
+        {
+            level (0 0);
+            patchInfo { type patch; }
+        }
+        inlet
+        {
+            level (0 0);
+            patchInfo { type patch; }
+        }
+        needle
+        {
+            level (0 0);
+            patchInfo { type wall; }
+        }
+        nozzle1
+        {
+            level (0 0);
+            patchInfo { type wall; }
+        }
+        nozzlle2
+        {
+            level (6 6);
+            patchInfo { type wall; }
+        }
+        outlet
+        {
+            level (0 0);
+            patchInfo { type patch; }
+        }
+
+    }
+    refinementRegions
+   {
+refinementBox0
+{
+ mode inside; 
+levels (( 1e15 5 )); 
+}
+
+refinementBox0
+{
+ mode inside;  
+levels (( 1e15 5 )); 
+}
+
+refinementBox1
+{
+ mode inside;
+levels (( 1e15 5 ));
+}
+
+refinementBox2
+{
+ mode inside;
+levels (( 1e15 5 ));
+}
+
+refinementBox3
+{
+ mode inside;
+levels (( 1e15 5 ));
+}
+
+refinementBox41
+{
+ mode inside; 
+levels (( 1e15 5 )); 
+}
+refinementBox42
+{
+ mode inside; 
+levels (( 1e15 5 )); 
+}
+refinementBox43
+{
+ mode inside; 
+levels (( 1e15 5 )); 
+}
+refinementBox44
+{
+ mode inside; 
+levels (( 1e15 5 )); 
+}
+refinementBox45
+{
+ mode inside; 
+levels (( 1e15 5 )); 
+}
+refinementBox46
+{
+ mode inside; 
+levels (( 1e15 5 )); 
+}
+refinementBox47
+{
+ mode inside; 
+levels (( 1e15 5 )); 
+}
+refinementBox48
+{
+ mode inside; 
+levels (( 1e15 5 )); 
+}
+refinementBox49
+{
+ mode inside; 
+levels (( 1e15 5 )); 
+}
+refinementBox410
+{
+ mode inside; 
+levels (( 1e15 5 )); 
+}
+refinementBox31
+{
+ mode inside; 
+levels (( 1e15 3 )); 
+}
+refinementBox32
+{
+ mode inside; 
+levels (( 1e15 3 )); 
+}
+refinementBox33
+{
+ mode inside; 
+levels (( 1e15 3 )); 
+}
+refinementBox34
+{
+ mode inside; 
+levels (( 1e15 3 )); 
+}
+refinementBox35
+{
+ mode inside; 
+levels (( 1e15 3 )); 
+}
+refinementBox36
+{
+ mode inside; 
+levels (( 1e15 3 )); 
+}
+refinementBox37
+{
+ mode inside; 
+levels (( 1e15 3 )); 
+}
+refinementBox38
+{
+ mode inside; 
+levels (( 1e15 3 )); 
+}
+refinementBox39
+{
+ mode inside; 
+levels (( 1e15 3 )); 
+}
+refinementBox310
+{
+ mode inside; 
+levels (( 1e15 3 )); 
+}
+refinementBox311
+{
+ mode inside; 
+levels (( 1e15 3 )); 
+}
+refinementBox312
+{
+ mode inside; 
+levels (( 1e15 3 )); 
+}
+refinementBox313
+{
+ mode inside; 
+levels (( 1e15 3 )); 
+}
+refinementBox314
+{
+ mode inside; 
+levels (( 1e15 3 )); 
+}
+refinementBox315
+{
+ mode inside; 
+levels (( 1e15 3 )); 
+}
+refinementBox316
+{
+ mode inside; 
+levels (( 1e15 3 )); 
+}
+refinementBox317
+{
+ mode inside; 
+levels (( 1e15 3 )); 
+}
+refinementBox318
+{
+ mode inside; 
+levels (( 1e15 3 )); 
+}
+refinementBox319
+{
+ mode inside; 
+levels (( 1e15 3 )); 
+}
+refinementBox21
+{
+ mode inside; 
+levels (( 1e15 2 )); 
+}
+refinementBox22
+{
+ mode inside; 
+levels (( 1e15 2 )); 
+}
+refinementBox23
+{
+ mode inside; 
+levels (( 1e15 2 )); 
+}
+refinementBox24
+{
+ mode inside; 
+levels (( 1e15 2 )); 
+}
+refinementBox25
+{
+ mode inside; 
+levels (( 1e15 2 )); 
+}
+refinementBox26
+{
+ mode inside; 
+levels (( 1e15 2 )); 
+}
+refinementBox27
+{
+ mode inside; 
+levels (( 1e15 2 )); 
+}
+refinementBox28
+{
+ mode inside; 
+levels (( 1e15 2 )); 
+}
+refinementBox29
+{
+ mode inside; 
+levels (( 1e15 2 )); 
+}
+refinementBox210
+{
+ mode inside; 
+levels (( 1e15 2 )); 
+}
+refinementBox211
+{
+ mode inside; 
+levels (( 1e15 2 )); 
+}
+refinementBox212
+{
+ mode inside; 
+levels (( 1e15 2 )); 
+}
+refinementBox213
+{
+ mode inside; 
+levels (( 1e15 2 )); 
+}
+refinementBox214
+{
+ mode inside; 
+levels (( 1e15 2 )); 
+}
+refinementBox215
+{
+ mode inside; 
+levels (( 1e15 2 )); 
+}
+refinementBox216
+{
+ mode inside; 
+levels (( 1e15 2 )); 
+}
+refinementBox217
+{
+ mode inside; 
+levels (( 1e15 2 )); 
+}
+refinementBox218
+{
+ mode inside; 
+levels (( 1e15 2 )); 
+}
+refinementBox219
+{
+ mode inside; 
+levels (( 1e15 2 )); 
+}
+refinementBox11
+{
+ mode inside; 
+levels (( 1e15 1 )); 
+}
+refinementBox12
+{
+ mode inside; 
+levels (( 1e15 1 )); 
+}
+refinementBox13
+{
+ mode inside; 
+levels (( 1e15 1 )); 
+}
+refinementBox14
+{
+ mode inside; 
+levels (( 1e15 1 )); 
+}
+refinementBox15
+{
+ mode inside; 
+levels (( 1e15 1 )); 
+}
+refinementBox16
+{
+ mode inside; 
+levels (( 1e15 1 )); 
+}
+refinementBox17
+{
+ mode inside; 
+levels (( 1e15 1 )); 
+}
+refinementBox18
+{
+ mode inside; 
+levels (( 1e15 1 )); 
+}
+refinementBox19
+{
+ mode inside; 
+levels (( 1e15 1 )); 
+}
+refinementBox110
+{
+ mode inside; 
+levels (( 1e15 1 )); 
+}
+refinementBox111
+{
+ mode inside; 
+levels (( 1e15 1 )); 
+}
+refinementBox112
+{
+ mode inside; 
+levels (( 1e15 1 )); 
+}
+refinementBox113
+{
+ mode inside; 
+levels (( 1e15 1 )); 
+}
+refinementBox114
+{
+ mode inside; 
+levels (( 1e15 1 )); 
+}
+refinementBox115
+{
+ mode inside; 
+levels (( 1e15 1 )); 
+}
+refinementBox116
+{
+ mode inside; 
+levels (( 1e15 1 )); 
+}
+refinementBox117
+{
+ mode inside; 
+levels (( 1e15 1 )); 
+}
+refinementBox118
+{
+ mode inside; 
+levels (( 1e15 1 )); 
+}
+refinementBox119
+{
+ mode inside; 
+levels (( 1e15 1 )); 
+}
+    }
+}
+
+snapControls
+{
+    nSmoothPatch    3;
+    tolerance       24;
+    nSolveIter      30;
+    nRelaxIter      5;
+    nFeatureSnapIter 15;
+    implicitFeatureSnap false;
+    explicitFeatureSnap true;
+    multiRegionFeatureSnap false;
+}
+
+addLayersControls
+{
+    relativeSizes   false;
+    expansionRatio  1.0;
+    finalLayerThickness 0.008;
+    minThickness    0.00001;
+    nGrow           0;
+    featureAngle    80;
+    slipFeatureAngle 30;
+    nRelaxIter      3;
+    nSmoothSurfaceNormals 1;
+    nSmoothNormals  3;
+    nSmoothThickness 10;
+    maxFaceThicknessRatio 0.5;
+    maxThicknessToMedialRatio 0.3;
+    minMedianAxisAngle 130;
+    nBufferCellsNoExtrude 0;
+    nLayerIter      50;
+    layers
+    {
+        chamber
+        {
+             nSurfaceLayers 0;
+        }
+        inlet
+        {
+             nSurfaceLayers 0;
+        }
+        needle
+        {
+             nSurfaceLayers 0;
+        }
+        nozzle1
+        {
+             nSurfaceLayers 0;
+        }
+        nozzlle2
+        {
+             nSurfaceLayers 3;
+        }
+        outlet
+        {
+             nSurfaceLayers 0;
+        }
+
+    }
+}
+
+meshQualityControls
+{
+    maxNonOrtho     60;
+    maxBoundarySkewness 10;
+    maxInternalSkewness 5;
+    maxConcave      70;
+    minVol          1e-18;
+    minTetQuality   1e-15;
+    minArea         -1;
+    minTwist        0.02;
+    minDeterminant  0.001;
+    minFaceWeight   0.05;
+    minVolRatio     0.01;
+    minTriangleTwist -1;
+    nSmoothScale    4;
+    errorReduction  0.75;
+}
+
+writeFlags      ( scalarLevels layerSets layerFields );
+
+mergeTolerance  1e-06;
