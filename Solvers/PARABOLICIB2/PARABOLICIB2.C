@@ -52,7 +52,7 @@ int main(int argc, char *argv[])
     scalar meanCoNum = 0.0;
     scalar CoNumMin = 0.0;
 
-    volScalarField rho_0("rho_0",rho);                                      //NADA
+    volScalarField rho_0("rho_0",rho);                                      
     volScalarField rhoY_0("rhoY_0",rhoY);
     volVectorField rhoU_0("rhoU_0",rhoU);
     volScalarField rhoE_0("rhoE_0",rhoE);
@@ -67,14 +67,14 @@ int main(int argc, char *argv[])
     volScalarField implicitSource( ib.implicitIbSource() );
     Info <<"Immersed Boundary Updated"<<nl;
 
-    rho1.ref() = rho.ref();                                                 //NADA
+    rho1.ref() = rho.ref();                                                 
     rhoU1.ref()= rhoU.ref();
     rhoE1.ref() = rhoE.ref();
     rhoY1.ref() = rhoY.ref();
     p1.ref() = p_r.ref();
     c1.ref() = c.ref();
 
-    U.correctBoundaryConditions();                                           //NADA
+    U.correctBoundaryConditions();                                           
     Y.correctBoundaryConditions();
     rho.correctBoundaryConditions();
     e.correctBoundaryConditions();
@@ -84,7 +84,7 @@ int main(int argc, char *argv[])
     p_r.correctBoundaryConditions();
     c.correctBoundaryConditions();
 
-    rho1.correctBoundaryConditions();                                         //NADA
+    rho1.correctBoundaryConditions();                                         
     rhoY1.boundaryFieldRef() == rho.boundaryField()*Y.boundaryField();
     rhoU1.boundaryFieldRef() == rho.boundaryField()*U.boundaryField();
     rhoE1.boundaryFieldRef() == rho.boundaryField()*( e.boundaryField() + 0.5*magSqr(U.boundaryField()));
@@ -209,12 +209,12 @@ int main(int argc, char *argv[])
         break;
         }
 
-        Y.ref() = rhoY.ref() / rho.ref();                                        //NADA
+        Y.ref() = rhoY.ref() / rho.ref();                                        
         U.ref() = rhoU.ref() /rho.ref();
         e = rhoE/rho - 0.5*magSqr(U);
 
         forAll(rho, celli)
-        {                                                     //NADA
+        {                                                     
             rho.ref()[celli] = max(0.25,rho.ref()[celli]);
         }
        
@@ -233,22 +233,22 @@ int main(int argc, char *argv[])
         #include "calculateThermo.H"            //COMPUTE THERMODYNAMIC PROPERTIES
         turbulence->correct();
         
-        rho1.ref() == rho.ref();                                                //NADA
+        rho1.ref() == rho.ref();                                                
         rhoU1.ref() == rhoU.ref();
         rhoE1.ref() == rhoE.ref();
         rhoY1.ref() == rhoY.ref();
         p1.ref() == p_r.ref();
         c1.ref() == c.ref();
 
-        p1.correctBoundaryConditions();                                         //NADA
+        p1.correctBoundaryConditions();                                         
         c1.correctBoundaryConditions();
 
-	    #include "flux.H"                                                        // COMPUTE FLUJOS EN FACE
+	    #include "flux.H"                                                        // Compute facefluxes
     }
     
         runTime.write();
 
-        Info<< "ExecutionTime = " << runTime.elapsedCpuTime() << " s"                                   //NADA
+        Info<< "ExecutionTime = " << runTime.elapsedCpuTime() << " s"                                   
             << "  ClockTime = " << runTime.elapsedClockTime() << " s"
             << nl << endl;
     } //while runTime
