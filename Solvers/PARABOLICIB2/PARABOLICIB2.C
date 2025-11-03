@@ -252,6 +252,6 @@ int main(int argc, char *argv[])
             << "  ClockTime = " << runTime.elapsedClockTime() << " s"
             << nl << endl;
     } //while runTime
-    Info<< "End\n" << endl;                                                                               //NADA
+    Info<< "End\n" << endl;                                                                               
     return 0;
 }
